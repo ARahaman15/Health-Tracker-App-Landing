@@ -1,0 +1,281 @@
+img {
+    max-width: 100%;
+}
+body,h1,h2,h3,h4,h5,h6,p,span{
+    font-family: 'Work Sans', sans-serif;
+}
+.sec-title{
+    font-size: 40px;
+    color: #000;
+    font-weight: 550;
+}
+
+/* Navbar CSS */
+.logo img{
+    height: 40px;
+}
+.logo span{
+    color: #010101;
+    font-size: 25px;
+    font-weight: 500;
+}
+.navmenu ul{
+    list-style: none;
+}
+.navmenu ul li{
+    display: inline-block;
+    position: relative;
+}
+.navmenu ul li a{
+    display: block;
+    text-decoration: none;
+    color: #010101 !important;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 15px 20px;
+}
+.navmenu ul li a:hover{
+    color: #6278df !important;
+}
+.navmenu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 105%;
+    width: 210px;
+    background: #fff;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.navmenu ul li ul li{
+    border-bottom: 1px solid #ddd;
+}
+.navmenu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+.nav-btn a{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 20px;
+}
+
+/* Slider Section CSS */
+.slider-section{
+    background: url(img/page-bannar.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    padding: 100px 0;
+    z-index: 1;
+}
+.slider-section::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+.slider-section h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+.slider-section h2{
+    font-size: 50px;
+    margin: 20px 0;
+}
+.slider-content input{
+    padding: 1rem 1.5rem;
+}
+.slider-content input:focus{
+    border: 1px solid #6278df;
+    box-shadow: 4px 5px 30px 20px rgba(223, 225, 236, 0.1);
+}
+.slider-content button{
+    padding: .7rem .8rem;
+    font-size: 25px;
+    font-weight: 600;
+}
+.slider-content button:hover{
+    background: #fff;
+    border: 2px solid #6278df;
+    color: #6278df;
+    box-shadow: 4px 5px 30px 20px rgba(223, 225, 236, 0.1);
+}
+
+/* Counter Section CSS */
+.counter-section h2{
+    font-size: 40px;
+}
+.counter-section h4{
+    color: #767676;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* About Section CSS */
+.about-section{
+    background: #f7f9ff;
+}
+.section-content{
+    margin-top: 4rem;
+    margin-right: 20px;
+}
+.section-content p{
+    font-size: 20px;
+    line-height: 2rem;
+}
+
+/* Features Section CSS */
+.feature-item{
+    height: 300px;
+    box-shadow: 4px 5px 30px 0px rgba(64, 87, 191, 0.1);
+}
+.left-img{
+    width: 45%;
+    overflow: hidden;
+    border-radius: 7px 0 0 7px;
+}
+.left-img img{
+    height: 100%;
+    width: auto;
+    max-width: inherit;
+    position: relative;
+    left: -80px;
+}
+.right-text{
+    width: 55%;
+    padding: 20px;
+}
+
+/* Portfolio section CSS */
+.portfolio-item a{
+    position: relative;
+    display: block;
+}
+.portfolio-item a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(98, 120, 223, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+.portfolio-item:hover a::after{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Pricing Section CSS */
+.pricing-section{
+    background: #f7f9ff;
+}
+.pricing-item{
+    background: #fff;
+    padding: 3.2rem;
+    box-shadow: 4px 5px 30px 20px rgba(223, 225, 236, 0.3);
+    border-radius: 8px;
+}
+.pricing-item ul{
+    list-style: none;
+}
+.pricing-item ul li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #777;
+}
+.pricing-item span{
+    color: #6278df;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    width: 40px;
+}
+.pricing-item-btn{
+    border-color: #6278df;
+    border-radius: 2px;
+    color: #657be0;
+    padding: 14px 30px;
+    font-size: 22px;
+    box-shadow: 4px 5px 30px 20px rgba(223, 225, 236, 0.3);
+}
+
+/*Testimonial Section CSS */
+.testimonial-item span i{
+    font-size: 60px;
+    color: #efefef;
+}
+.user-info{
+    width: 220px;
+    margin: auto;
+}
+.user-info img{
+    width: 90px;
+    margin-right: 10px;
+}
+.user{
+    text-align: left;
+    position: relative;
+    top: 1.5rem;   
+}
+
+/* Team Section CSS */
+.team-section{
+    background: #f7f9ff;
+}
+.team-member{
+    margin-top: 120px;
+}
+.team-member .card img{
+    width: 120px;
+    height: auto;
+    margin-top: -70px;
+    margin-left: 15px;
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 30%);
+}
+.team-member .card a{
+    font-weight: 550;
+    font-size: 17px;
+}
+.team-member .card a:hover{
+    background: #21254a;
+    color: #fff;
+}
+
+/*Contact Section CSS*/
+.contact-form input{
+    padding: 1rem;
+}
+.contact-form textarea{
+    padding: 3rem 1rem;
+}
+.contact-form .btn{
+    background: #556edf;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+.contact-form .btn:hover{
+    background: #fff;
+    color: #6278df;
+    border: 1px solid #6278df;
+    box-shadow: 4px 5px 30px 20px rgba(75, 102, 218, 0.3);
+}
+
+/* Footer Section CSS */
+.footer-section{
+    background: #f7f9ff;
+}
